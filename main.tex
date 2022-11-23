@@ -1,0 +1,98 @@
+\documentclass[12pt,a4paper,sans]{moderncv}
+\usepackage[danish, english]{babel}
+
+\moderncvstyle{classic}
+\moderncvcolor{black}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+\setlength{\footskip}{136.00005pt}      % depending on the amount of information in the footer, you need to change this value. comment this line out and set it to the size given in the warning
+
+%\setlength{\hintscolumnwidth}{3cm}     % if you want to change the width of the column with the dates
+
+%\setlength{\makecvheadnamewidth}{10cm} % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% font loading
+% for luatex and xetex, do not use inputenc and fontenc
+% see https://tex.stackexchange.com/a/496643
+\ifxetexorluatex
+  \usepackage{fontspec}
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX}
+  \setmainfont{Latin Modern Roman}
+  \setsansfont{Latin Modern Sans}
+  \setmonofont{Latin Modern Mono}
+  \setmathfont{Latin Modern Math} 
+\else
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+\fi
+
+% personal data
+\name{Magnus}{Mathiesen}
+\title{BsC i teknisk videnskab | (Software)}
+\address{Sverigesgade 6 st. th.}{9000 Aalborg}
+\phone[mobile]{+45 52 19 35 37}
+\email{magnus\_mat@pm.me}
+\social[github]{MagnusMat}
+\social[linkedin]{magnus-mathiesen-it}
+
+\photo[100pt][0pt]{Profile}
+
+\begin{document}
+
+% -------------------- CV --------------------
+
+\makecvtitle
+
+\section{Uddannelse}
+\cventry{2022 -- Nu}{Civilingeniør, cand.polyt., Software}{Aalborg Universitet}{Aalborg}{}{Web Intelligence, Programming Paradigms, Distributed Systems\\ \textit{Scalable Distributed Computational Offloading}}
+\cventry{2019 -- 2022}{BsC i teknisk videnskab, Software}{Aalborg Universitet}{Aalborg}{}{Algorithms, Data-Structrures \& Computability, Agile Software Engineering, Computer Architecture \& Operating Systems\\ \textit{Warehouse Autonomous Mobile Robot Simulation \& Planning, Programming Language Development with ANTLR, Digital Relay Race}}
+\cventry{2016 -- 2019}{HTX, GameIT}{Viden Djurs}{Grenå}{}{Kommunikation/it., Digital Design \& Udvikling, Matematik\\ \textit{Spiludvikling og Gruppeledelse}}
+
+\section{Arbejde}
+\cventry{2022 -- Nu}{Stifter \& Web Udvikler}{Mathiesen Hjemmesider}{Remote}{}{Udvikling \& Service\\ \textit{Freelance}}
+\cventry{2020 -- 2021}{Web Designer \& Kundeservice}{Lund Hjemmesider}{Remote}{}{WordPress -- \textit{Udvikling af 80+ hjemmesider}}
+\cventry{2016 -- 2017}{Servicemedarbejder \& Ferskvarer}{Kvickly}{Randers \& Grenå}{}{}
+
+\section{Teknologier}
+\cvitem{Languages}{C\#, JavaScript/TypeScript, C/C++, Haskell, Flutter}
+\cvitem{Frameworks}{.NET \textit{Blazor/ASP.NET/MAUI}, Node.js, React}
+\cvitem{Connectivity}{SignalR, MariaDB/MySQL, LINQ}
+\cvitem{Development Tools}{Visual Studio/VSC, Unity, Docker}
+
+\clearpage
+% -------------------- Cover letter --------------------
+
+% recipient data
+\recipient{Modtager navn}{Canvy\\123 somestreet\\some city}
+\date{\today}
+\opening{Kære Navn,}
+\closing{Bedste hilsner,}
+
+\makelettertitle
+
+Jeg skriver til jer, da jeg er interesseret i jobbet som App developer (studentermedhjælper).
+
+Jeg interesserer mig generelt meget for it og programmering og går for tiden på Aalborg Universitet hvor jeg er i fuld gang med første semester på en kandidaten for software. Jeg fik i starten af sommeren afsluttet min bachelor i feltet og har der igennem skaffet mig en masse erfaren med diverse programmeringsteknologier, heriblandt .NET, og selvfølgelig herunder MAUI, ASP.NET, og lign. Der har både været focus på backenden (diverse design patterns og arkitekturer), samt UI/UX. Desuden har jeg erfaring med Agil projektstyring, med værktøjer såsom Kanban-platforme, versions-kontrol, og CI/CD.
+
+Har desuden fået opbygget en masse erfaringer med web-teknologi, og har startet en enkeltmandsvirksomhen, hvor at jeg udvikler hjemmesider til mellem -- lille størrelse virksomheder, samt til privatpersoner. I den sammenhæng har arbejdet med kunderne remotely. Kommunikation er foregået over styringsplatforme som Monday, samt samarbejdet med kunder via email og telefon. Her er jeg stået for fortolkning af kundernes behov og har udviklet en passende løsning, men alting fra webshops, booking-systemer, resumeer, og takeaway-sider.
+
+Nogle interessante projekter jeg har bidraget til har været:
+
+\begin{itemize}
+    \item Simulering af Autonomous Mobile Robots i varehuse, samt plannig i forskellige domæner.
+    \item Skalerbar Computational Offloading af vilkårlige scripts til enheder.
+    \item Et digitalt stafetløb på tværs af Danmark, med tilhørende live fremskridt på en webapp.
+    \item Adskillige video-spil, i alt fra fysiske spilenheder, VR, og traditionelle spil.
+\end{itemize}
+
+Da jeg har studie i dagtimerne, har jeg god mulighed for at bidrage i aftentimerne og weekenderne.
+
+Jeg ser frem til at høre fra jer, og vil med glæde bidrage med mere information skulle det ønskes via mail eller telefon. På forhånd tak.
+
+\makeletterclosing
+
+\end{document}
